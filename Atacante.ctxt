@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Atacante
+comment0.text=\r\n\ Define\ la\ caracter\u00EDstica\ b\u00E1sica\ de\ un\ Atacante\ en\ la\ Batalla\ Espacial\r\n
+comment1.params=
+comment1.target=int\ obtenerDa\u00F1o()
+comment1.text=\r\n\ Establece\ el\ da\u00F1o\ que\ un\ {@link\ Atacante}\ efect\u00FAa\r\n\ \r\n\ @return\ el\ da\u00F1o\ que\ efect\u00FAa\r\n
+numComments=2

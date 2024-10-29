@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Item
+comment0.text=\r\n\ Define\ un\ Item\ en\ la\ Batalla\ Espacial\r\n
+comment1.params=
+comment1.target=void\ actualizarImagen()
+comment1.text=\r\n\ Establece\ la\ imagen\ con\ la\ escala\ definida\r\n
+comment2.params=
+comment2.target=int\ serRecogido()
+comment2.text=\r\n\ post\:\ el\ Item\ desaparece\ del\ mundo\r\n\ \r\n\ @return\ la\ cantidad\ de\ combustible\ que\ el\ Item\ proporciona\r\n
+numComments=3

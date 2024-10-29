@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Da\u00F1able
+comment0.text=\r\n\ Define\ c\u00F3mo\ se\ efectuar\u00E1n\ los\ da\u00F1os\ en\ la\ Batalla\r\n
+comment1.params=atacante
+comment1.target=void\ recibirDa\u00F1oDe(Atacante)
+comment1.text=\r\n\ post\:\ el\ Da\u00F1able\ recibe\ una\ cierta\ cantidad\ de\ da\u00F1o\ de\ un\ {@link\ Atacante},\r\n\ definida\ por\ {@link\ Atacante\#obtenerDa\u00F1o()}\r\n\ \r\n\ @param\ atacante\ es\ quien\ efectuar\u00E1\ el\ da\u00F1o\ que\ se\ recibir\u00E1\r\n
+numComments=2

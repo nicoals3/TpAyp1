@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Asteroide
+comment0.text=\r\n\ Un\ Asteroide\ es\ un\ obst\u00E1culo\ que\ puede\ ser\ destruido\ por\ una\r\n\ {@link\ NaveDeAtaque}.\ Esto\ llevar\u00E1\ una\ cierta\ cantidad\ de\ ataques\r\n
+comment1.params=
+comment1.target=Asteroide()
+comment1.text=\r\n\ Inicializa\ un\ Asteroide\ con\ tama\u00F1o\ aleatorio\ entre\ 51\ y\ 100\ puntos\r\n
+comment2.params=tama\u00F1oInicial
+comment2.target=Asteroide(int)
+comment2.text=\r\n\ Inicializa\ un\ Asteroiode\ con\ tama\u00F1o\ arbitrario,\ en\ el\ rango\ de\ 10\ a\r\n\ {@value\ \#TAMA\u00D1O_MAXIMO_DE_ASTEROIDE}\ puntos\r\n\ \r\n\ @param\ tama\u00F1oInicial\r\n
+comment3.params=atacante
+comment3.target=void\ recibirDa\u00F1oDe(Atacante)
+comment3.text=\r\n\ post\:\ el\ Asteroide\ reducir\u00E1\ su\ tama\u00F1o\ conforme\ la\ potencia\ del\ ataque.\ <br>\r\n\ post\:\ el\ Asteroide\ ser\u00E1\ eliminado\ del\ tablero\ si\ su\ tama\u00F1o\ llega\ a\ 0.\ <br>\r\n\ \r\n\ @see\ Da\u00F1able\#recibirDa\u00F1oDe(Atacante)\r\n
+comment4.params=
+comment4.target=void\ actualizarImagen()
+comment4.text=\r\n\ {@inheritDoc}\r\n
+comment5.params=
+comment5.target=int\ obtenerTama\u00F1oMaximo()
+comment5.text=\r\n\ {@value\ \#TAMA\u00D1O_MAXIMO_DE_ASTEROIDE}\r\n\ \r\n\ @return\ el\ tama\u00F1o\ m\u00E1ximo\ que\ puede\ tener\ un\ Asteroide\r\n
+comment6.params=
+comment6.target=int\ obtenerTama\u00F1o()
+comment6.text=\r\n\ {@link\ \#tama\u00F1o}\r\n\ \r\n\ @return\ el\ tama\u00F1o\ del\ Asteroide\r\n
+numComments=7

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Brujula
+comment0.text=\r\n\ Representa\ una\ Brujula\ en\ pantalla.\ Sirve\ como\ ayuda\ visual\ al\ usuario.\r\n
+comment1.params=
+comment1.target=void\ actualizarImagen()
+comment1.text=\r\n\ Permite\ escalar\ la\ imagen\ de\ la\ Brujula.\r\n
+numComments=2
