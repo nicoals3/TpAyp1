@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ParedIrrompible
+comment0.text=\r\n\ Un\ ParedIrrompible\ es\ un\ obst\u00E1culo\ que\ puede\ ser\ destruido\ por\ una\r\n\ {@link\ NaveDeAtaque}.\ Esto\ llevar\u00E1\ una\ cierta\ cantidad\ de\ ataques\r\n
+comment1.params=
+comment1.target=void\ actualizarImagen()
+comment1.text=\r\n\ {@inheritDoc}\r\n
+numComments=2
