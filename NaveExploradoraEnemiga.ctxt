@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=NaveExploradoraEnemiga
+comment0.text=\r\n\ Define\ una\ NaveExploradora\ de\ la\ facci\u00F3n\ Enemiga\r\n
+comment1.params=direccion
+comment1.target=NaveExploradoraEnemiga(Direccion)
+comment1.text=\r\n\ {@inheritDoc}\r\n
+numComments=2

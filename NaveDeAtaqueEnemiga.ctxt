@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=NaveDeAtaqueEnemiga
+comment0.text=\r\n\ Define\ el\ comportamiento\ de\ las\ Naves\ de\ Ataque\ Enemigas\r\n
+comment1.params=direccion
+comment1.target=NaveDeAtaqueEnemiga(Direccion)
+comment1.text=\r\n\ {@inheritDoc}\r\n
+comment2.params=direccion\ salud
+comment2.target=NaveDeAtaqueEnemiga(Direccion,\ int)
+comment2.text=\r\n\ post\:\ incializa\ una\ NaveDeAtaqueEnemiga\ con\ la\ orientaci\u00F3n\ deseada\ y\ la\ salud\r\n\ inicial\ definida\r\n\ \r\n\ @param\ direccion\ es\ la\ direcci\u00F3n\ inicial\r\n\ @param\ salud\ \ \ \ \ es\ la\ salud\ inicial\ definida\r\n
+comment3.params=atacante
+comment3.target=void\ recibirDa\u00F1oDe(Atacante)
+comment3.text=\r\n\ {@inheritDoc}\r\n
+comment4.params=
+comment4.target=int\ obtenerDa\u00F1o()
+comment4.text=\r\n\ {@inheritDoc}\r\n
+comment5.params=
+comment5.target=int\ obtenerSalud()
+comment5.text=\r\n\ @see\ NaveEnemiga\#salud\r\n
+comment6.params=objetivo
+comment6.target=void\ atacar(Da\u00F1able)
+comment6.text=\r\n\ Ataca\ a\ un\ objetivo.\ Debe\ utilizarse\ dentro\ de\ sus\ m\u00E9todos,\ es\ un\ servicio\r\n\ interno\ <br>\r\n\ post\:\ el\ objetivo\ recibe\ un\ ataque\r\n\ \r\n\ @param\ objetivo\ es\ el\ objetivo\ del\ ataque\r\n
+comment7.params=direccion
+comment7.target=void\ atacarHacia(Direccion)
+comment7.text=\r\n\ Ataca\ en\ una\ direcci\u00F3n\ determinada\ <br>\r\n\ post\:\ El\ {@link\ Da\u00F1able}\ que\ haya\ en\ la\ direcci\u00F3n\ determinada\ recibir\u00E1\ un\r\n\ ataque\r\n\ \r\n\ @param\ direccion\ es\ la\ direcci\u00F3n\ del\ ataque\r\n
+numComments=8

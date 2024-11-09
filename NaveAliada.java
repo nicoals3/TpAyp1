@@ -49,6 +49,7 @@ public abstract class NaveAliada extends NaveBase {
 	 * Recibe un daño de un {@link Atacante} <br>
 	 * post: La NaveAliada obtendrá el impacto que el atacante le genere, y se
 	 * reflejará en forma de {@link #combustible} perdido.
+	 * 
 	 * @see Dañable#recibirDañoDe(Atacante)
 	 * 
 	 * @param atacante es quien realizó el ataque
@@ -194,14 +195,14 @@ public abstract class NaveAliada extends NaveBase {
 		int y = getY();
 
 		switch (direccion) {
-		case NORTE:
-			return y == 0;
-		case SUR:
-			return y == height;
-		case ESTE:
-			return x == width;
-		case OESTE:
-			return x == 0;
+			case NORTE:
+				return y == 0;
+			case SUR:
+				return y == height;
+			case ESTE:
+				return x == width;
+			case OESTE:
+				return x == 0;
 		}
 		return false;
 	}
