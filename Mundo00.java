@@ -3,7 +3,7 @@ import greenfoot.*;
 public class Mundo00 extends MundoBase {
 
     public Mundo00() {
-        super(6, 5, 100);
+        super(15, 10, 100);
     }
 
     protected void generarNaves() {
@@ -28,5 +28,9 @@ public class Mundo00 extends MundoBase {
     protected void generarAsteroides() {
         agregar(new Asteroide(), 0, 2);
         agregar(new AsteroideDeMineral(), 0, 3);
+    }
+    
+    protected void generarParedes(){
+        agregar(new ParedIrrompible(), 2, 3);
     }
 }
