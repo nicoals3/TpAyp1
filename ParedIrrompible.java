@@ -5,7 +5,7 @@ import greenfoot.*;
  * {@link NaveDeAtaque}. Esto llevará una cierta cantidad de ataques
  */
 public class ParedIrrompible extends ActorBase {
-
+    
     /**
      * {@inheritDoc}
      */

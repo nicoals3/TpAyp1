@@ -4,7 +4,8 @@ import greenfoot.*;
  * Una PuertaConLlave es...
  */
 public class PuertaConLlave extends ActorBase {
-
+    
+    protected boolean abierta = false;
     /**
      * {@inheritDoc}
      */

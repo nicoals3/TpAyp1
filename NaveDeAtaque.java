@@ -38,7 +38,7 @@ public class NaveDeAtaque extends NaveAliada implements Atacante {
             this.motoresEncendidos = true;
             Greenfoot.playSound("engine-on.wav");
             int tamCelda = getWorld().getCellSize();
-            imagenBase = new GreenfootImage("weaponized-ship-on.png");
+            imagenBase = new GreenfootImage("nave-aliada-encendida.png");
             imagenBase.scale((int) (tamCelda * ESCALA_X), (int) (tamCelda * ESCALA_Y));
             actualizarImagen();
         }
@@ -54,7 +54,7 @@ public class NaveDeAtaque extends NaveAliada implements Atacante {
             this.motoresEncendidos = false;
             Greenfoot.playSound("engine-off.wav");
             int tamCelda = getWorld().getCellSize();
-            imagenBase = new GreenfootImage("weaponized-ship.png");
+            imagenBase = new GreenfootImage("nave-aliada.png");
             imagenBase.scale((int) (tamCelda * ESCALA_X), (int) (tamCelda * ESCALA_Y));
             actualizarImagen();
         }
