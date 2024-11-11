@@ -7,11 +7,8 @@ public class Mundo00 extends MundoBase {
     }
 
     protected void generarNaves() {
-        agregar(new NaveExploradora(), 1, 0);
         agregar(new NaveDeAtaque(), 2, 1);
-        agregar(new NaveRecolectora(), 3, 2);
 
-        agregar(new NaveExploradoraEnemiga(Direccion.NORTE), 4, 0);
         agregar(new NaveDeAtaqueEnemiga(Direccion.NORTE), 5, 1);
 
         agregar(new PilotoDeEjemplo(), 0, 4);
@@ -27,10 +24,27 @@ public class Mundo00 extends MundoBase {
 
     protected void generarAsteroides() {
         agregar(new Asteroide(), 0, 2);
-        agregar(new AsteroideDeMineral(), 0, 3);
     }
     
     protected void generarParedes(){
         agregar(new ParedIrrompible(), 2, 3);
+        agregar(new ParedIrrompible(), 2, 4);
+        agregar(new ParedIrrompible(), 2, 5);
+        agregar(new ParedIrrompible(), 3, 5);
+        agregar(new ParedIrrompible(), 4, 5);
+        agregar(new ParedIrrompible(), 4, 4);
+        agregar(new ParedIrrompible(), 4, 3);
+    }
+    
+    protected void generarPuertas(){
+        agregar(new PuertaConLlave(), 3, 3);
+    }
+    
+    protected void generarLlaves(){
+        agregar(new Llave(), 2, 2);
+    }
+    
+    protected void generarMinasExplosivas(){
+        agregar(new MinaExplosiva(), 2, 0);
     }
 }

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Portal
+comment0.text=\r\n\ Define\ un\ Portal\ en\ la\ Batalla\ Espacial\r\n
+comment1.params=destX\ destY
+comment1.target=Portal(int,\ int)
+comment2.params=
+comment2.target=void\ actualizarImagen()
+comment2.text=\r\n\ Establece\ la\ imagen\ con\ la\ escala\ definida\r\n
+comment3.params=
+comment3.target=int\ devolverDestX()
+comment4.params=
+comment4.target=int\ devolverDestY()
+comment5.params=
+comment5.target=boolean\ serRecogido()
+comment5.text=\r\n\ post\:\ el\ Portal\ desaparece\ del\ mundo\r\n\ \r\n\ @return\ la\ cantidad\ de\ combustible\ que\ el\ Portal\ proporciona\r\n
+numComments=6

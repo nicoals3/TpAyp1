@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Llave
+comment0.text=\r\n\ Define\ un\ Llave\ en\ la\ Batalla\ Espacial\r\n
+comment1.params=
+comment1.target=void\ actualizarImagen()
+comment1.text=\r\n\ Establece\ la\ imagen\ con\ la\ escala\ definida\r\n
+comment2.params=
+comment2.target=boolean\ serRecogido()
+comment2.text=\r\n\ post\:\ la\ Llave\ desaparece\ del\ mundo\r\n\ \r\n\ @return\ la\ Llave\ fue\ recogida\r\n
+numComments=3

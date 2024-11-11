@@ -37,6 +37,10 @@ public abstract class MundoBase extends World {
         generarAsteroides();
         generarItems();
         generarParedes();
+        generarPuertas();
+        generarLlaves();
+        generarMinasExplosivas();
+        generarPortales();
 
         generarNaves();
         agregar(new Brujula(), ancho, alto);
@@ -98,6 +102,30 @@ public abstract class MundoBase extends World {
     * Punto de extension para generar las Paredes
     */
     protected void generarParedes() {
+    }
+    
+    /**
+    * Punto de extension para generar las Puertas
+    */
+    protected void generarPuertas() {
+    }
+    
+    /**
+    * Punto de extension para generar la Llave
+    */
+    protected void generarLlaves() {
+    }
+    
+    /**
+    * Punto de extension para generar las Minas Explosivas
+    */
+    protected void generarMinasExplosivas() {
+    }
+    
+    /**
+    * Punto de extension para generar los Portales
+    */
+    protected void generarPortales() {
     }
     
     /**
