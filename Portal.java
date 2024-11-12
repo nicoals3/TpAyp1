@@ -8,8 +8,8 @@ public class Portal extends ActorBase {
     private int destX;
     private int destY;
     
-    private double ESCALA_X = 0.9;
-    private double ESCALA_Y = 0.9;
+    private double ESCALA_X = 1;
+    private double ESCALA_Y = 1;
     
     public Portal(int destX, int destY) {
         this.destX = destX;
@@ -33,16 +33,5 @@ public class Portal extends ActorBase {
     
     public int devolverDestY(){
         return destY;
-    }
-    
-    /**
-     * post: el Portal desaparece del mundo
-     * 
-     * @return la cantidad de combustible que el Portal proporciona
-     */
-    public boolean serRecogido() {
-        getWorld().removeObject(this);
-        Greenfoot.delay(20);
-        return true;
     }
 }

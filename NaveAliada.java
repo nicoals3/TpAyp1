@@ -1,3 +1,4 @@
+import greenfoot.*;
 import greenfoot.Color;
 
 /**
@@ -9,7 +10,9 @@ public abstract class NaveAliada extends NaveBase {
      * El combustible de la NaveAliada. Toda acción insume combustible
      */
     protected int combustible;
-
+        //                                          agregar documentacion
+    protected boolean llave = false;
+    
     /**
      * Inicializa una NaveAliada con el {@link #obtenerCombustibleMaximo()}
      */
@@ -82,7 +85,11 @@ public abstract class NaveAliada extends NaveBase {
         this.combustible = Math.min(obtenerCombustibleMaximo(), this.combustible + combustible);
         actualizarImagen();
     }
-
+    //                                          agregar documentacion
+    public void agarrarLlave(){
+        this.llave = true;
+        actualizarImagen();
+    }
     /**
      * {@link #combustible}
      * 
@@ -127,7 +134,7 @@ public abstract class NaveAliada extends NaveBase {
      * {@link #obtenerConsumoPorMovimiento()}, recogerá cualquier {@link Item} que
      * se encuentre en el camino, y se desplazará un casillero en la dirección
      * solicitada.
-     * 
+     *                                                                                                  agregar portal, mina y llave a documentacion
      * @param direccion es la dirección hacia la que se desea mover
      * @return si se ha movido acorde a lo solicitado
      */
@@ -148,6 +155,15 @@ public abstract class NaveAliada extends NaveBase {
         Portal portal = (Portal) getOneObjectAtOffset(0, 0, Portal.class);
         if (portal != null) {
             this.setLocation(portal.devolverDestX(),portal.devolverDestY());
+        }
+        MinaExplosiva mina = (MinaExplosiva) getOneObjectAtOffset(0, 0, MinaExplosiva.class);
+        if (mina != null) {
+            this.cargarCombustible(mina.serRecogido());
+        }
+        Llave llave = (Llave) getOneObjectAtOffset(0, 0, Llave.class);
+        if (llave != null) {
+            this.agarrarLlave();
+            llave.serRecogido();
         }
         return true;
     }
@@ -184,7 +200,12 @@ public abstract class NaveAliada extends NaveBase {
     public boolean hayNaveHacia(Direccion direccion) {
         return super.hayActorHacia(NaveBase.class, direccion);
     }
-
+    
+    //                                          agregar documentacion
+    public boolean hayPuertaHacia(Direccion direccion){
+        return super.hayActorHacia(PuertaCerrada.class, direccion);
+    }
+    
     /**
      * Define una forma de inspeccionar el entorno
      * 
@@ -219,4 +240,21 @@ public abstract class NaveAliada extends NaveBase {
     public boolean estaEnElBorde() {
         return isAtEdge();
     }
+    
+            //                                          agregar documentacion
+    public void abrirPuerta(Direccion direccion){
+        if(llave && hayPuertaHacia(direccion) && puedeActuar()){
+            this.direccion = direccion;
+            actualizarImagen();
+            setRotation(direccion.rotacion);
+            Greenfoot.delay(20);
+            PuertaCerrada puerta = (PuertaCerrada) getOneObjectAtOffset(this.direccion.dx, this.direccion.dy, PuertaCerrada.class);
+            if(puerta != null) {
+                puerta.puertaAbierta();
+            }
+            
+        }
+    }
+    
+    
 }

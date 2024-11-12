@@ -3,7 +3,7 @@ import greenfoot.*;
 public class Mundo00 extends MundoBase {
 
     public Mundo00() {
-        super(15, 10, 100);
+        super(5, 7, 100);
     }
 
     protected void generarNaves() {
@@ -37,7 +37,7 @@ public class Mundo00 extends MundoBase {
     }
     
     protected void generarPuertas(){
-        agregar(new PuertaConLlave(), 3, 3);
+        agregar(new PuertaCerrada(), 3, 3);
     }
     
     protected void generarLlaves(){

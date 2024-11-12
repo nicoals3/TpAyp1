@@ -3,7 +3,7 @@ import greenfoot.*;
 /**
  * Una PuertaConLlave es...
  */
-public class PuertaConLlave extends ActorBase {
+public class PuertaCerrada extends ActorBase {
     
     protected boolean abierta = false;
     /**
@@ -15,6 +15,10 @@ public class PuertaConLlave extends ActorBase {
         GreenfootImage image = getImage();
         image.scale(tamCelda, tamCelda);
         setImage(image);
+    }
+    
+    public void puertaAbierta() {
+        getWorld().removeObject(this);
     }
 
 }

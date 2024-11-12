@@ -116,7 +116,7 @@ public abstract class NaveBase extends ActorBase implements Dañable {
         actualizarImagen();
         Greenfoot.delay(20);
 
-        if (hayActorHacia(Asteroide.class, direccion) || hayActorHacia(NaveBase.class, direccion)|| hayActorHacia(ParedIrrompible.class, direccion)) { // hayActorHacia(PuertaCerrada.class, direccion)
+        if (hayActorHacia(Asteroide.class, direccion) || hayActorHacia(NaveBase.class, direccion)|| hayActorHacia(ParedIrrompible.class, direccion) || hayActorHacia(PuertaCerrada.class, direccion)) {
             return false;
         }
 

@@ -5,9 +5,9 @@ import greenfoot.*;
  */
 public class MinaExplosiva extends ActorBase {
     /**
-     * {@value #COMBUSTIBLE_CONTENIDO}
+     * {@value #EXPLOSION_RESTA}
      */
-    private static final int COMBUSTIBLE_CONTENIDO = 100;
+    private static final int EXPLOSION_RESTA = -100;
     
     private double ESCALA_X = 0.9;
     private double ESCALA_Y = 0.9;
@@ -26,11 +26,16 @@ public class MinaExplosiva extends ActorBase {
     /**
      * post: el MinaEspacial desaparece del mundo
      * 
-     * @return la cantidad de combustible que el MinaEspacial proporciona
+     * @return la cantidad de combustible que la MinaEspacial resta
      */
     public int serRecogido() {
+        //Explosion explosion = new Explosion();
+        Explosion.en(getWorld(), this.getX(), this.getY());
+        //explosion.en(getWorld(), super.getX(), super.getY());
         getWorld().removeObject(this);
+
+        
         Greenfoot.delay(20);
-        return COMBUSTIBLE_CONTENIDO;
+        return EXPLOSION_RESTA;
     }
 }
