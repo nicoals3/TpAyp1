@@ -9,8 +9,8 @@ public class MinaExplosiva extends ActorBase {
      */
     private static final int EXPLOSION_RESTA = -100;
     
-    private double ESCALA_X = 0.9;
-    private double ESCALA_Y = 0.9;
+    private double ESCALA_X = 0.6;
+    private double ESCALA_Y = 0.6;
 
     /**
      * Establece la imagen con la escala definida

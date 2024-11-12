@@ -250,4 +250,11 @@ public class NaveDeAtaque extends NaveAliada implements Atacante {
             canvas.highlight(this.piloto.getAura());
         }
     }
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void abrirPuerta(Direccion direccion) {
+        super.abrirPuerta(direccion);
+    }
 }

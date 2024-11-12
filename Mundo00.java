@@ -47,4 +47,8 @@ public class Mundo00 extends MundoBase {
     protected void generarMinasExplosivas(){
         agregar(new MinaExplosiva(), 2, 0);
     }
+    
+    protected void generarPortales() {
+        agregar(new Portal(3,4), 3, 1);
+    }
 }

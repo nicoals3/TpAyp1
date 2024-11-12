@@ -8,8 +8,8 @@ public class Portal extends ActorBase {
     private int destX;
     private int destY;
     
-    private double ESCALA_X = 1;
-    private double ESCALA_Y = 1;
+    private double ESCALA_X = 0.9;
+    private double ESCALA_Y = 0.9;
     
     public Portal(int destX, int destY) {
         this.destX = destX;

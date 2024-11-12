@@ -2,6 +2,8 @@
 comment0.target=Mundo00
 comment1.params=
 comment1.target=Mundo00()
+comment10.params=
+comment10.target=void\ generarPortales()
 comment2.params=
 comment2.target=void\ generarNaves()
 comment3.params=
@@ -18,4 +20,4 @@ comment8.params=
 comment8.target=void\ generarLlaves()
 comment9.params=
 comment9.target=void\ generarMinasExplosivas()
-numComments=10
+numComments=11
