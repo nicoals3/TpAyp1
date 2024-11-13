@@ -44,7 +44,7 @@ public class Mundo01 extends MundoBase {
 
     
     protected void generarParedes(){
-        //Columnas 
+        //Columnas Izquierda
         agregar(new ParedIrrompible(), 1, 1);
         agregar(new ParedIrrompible(), 1, 2);
         agregar(new ParedIrrompible(), 1, 3);
@@ -53,7 +53,19 @@ public class Mundo01 extends MundoBase {
         agregar(new ParedIrrompible(), 1, 6);
         agregar(new ParedIrrompible(), 1, 7);
         agregar(new ParedIrrompible(), 1, 8);
-        //Filas
+        
+        //Columnas derecha
+        agregar(new ParedIrrompible(), 10, 1);
+        agregar(new ParedIrrompible(), 10, 2);
+        agregar(new ParedIrrompible(), 10, 3);
+        agregar(new ParedIrrompible(), 10, 4);
+        agregar(new ParedIrrompible(), 10, 5);
+        agregar(new ParedIrrompible(), 10, 6);
+        agregar(new ParedIrrompible(), 10, 7);
+        agregar(new ParedIrrompible(), 10, 8);
+
+        
+        //Fila Superior
         agregar(new ParedIrrompible(), 2, 1);
         agregar(new ParedIrrompible(), 3, 1);
         agregar(new ParedIrrompible(), 4, 1);
@@ -64,17 +76,8 @@ public class Mundo01 extends MundoBase {
         agregar(new ParedIrrompible(), 9, 1);
         agregar(new ParedIrrompible(), 10, 1);
 
-        //Columnas
-        agregar(new ParedIrrompible(), 10, 1);
-        agregar(new ParedIrrompible(), 10, 2);
-        agregar(new ParedIrrompible(), 10, 3);
-        agregar(new ParedIrrompible(), 10, 4);
-        agregar(new ParedIrrompible(), 10, 5);
-        agregar(new ParedIrrompible(), 10, 6);
-        agregar(new ParedIrrompible(), 10, 7);
-        agregar(new ParedIrrompible(), 10, 8);
-
-        //Filas
+        
+        //Fila inferior
         agregar(new ParedIrrompible(), 9, 8);
         agregar(new ParedIrrompible(), 8, 8);
         agregar(new ParedIrrompible(), 7, 8);
@@ -82,7 +85,8 @@ public class Mundo01 extends MundoBase {
         agregar(new ParedIrrompible(), 5, 8);
         agregar(new ParedIrrompible(), 4, 8);
         agregar(new ParedIrrompible(), 3, 8);
-
+        
+        //Medio
         agregar(new ParedIrrompible(), 6,6);
         agregar(new ParedIrrompible(), 3, 5);
         agregar(new ParedIrrompible(), 4, 4);
