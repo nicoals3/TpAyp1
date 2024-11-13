@@ -13,6 +13,13 @@ public class Mundo01 extends MundoBase {
         int posicionEnY = 8;
         // agrega la nave centinela en la posición 2, 6
         agregar(centinela, posicionEnX, posicionEnY);
+        
+        NaveDeAtaque nave = new NaveDeAtaque();
+        int posicionX = 5;
+        int posicionY = 5;
+        // agrega la nave en la posición 5, 5
+        agregar(nave, posicionX, posicionY);
+        
 
     }
     @Override
@@ -110,6 +117,7 @@ public class Mundo01 extends MundoBase {
 
     protected void generarPortales() {
         agregar(new Portal(9,7), 3, 2);
+        agregar(new Portal(20,20),4,5);
     }
 }
 

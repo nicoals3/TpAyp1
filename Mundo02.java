@@ -119,7 +119,7 @@ public class Mundo02 extends MundoBase {
     }  
 
     protected void generarPuertas(){
-        agregar(new PuertaCerrada(), 12, 2);
+        agregar(new PuertaCerrada(), 13, 2);
     }
 
     protected void generarLlaves(){
