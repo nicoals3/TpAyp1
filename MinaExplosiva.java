@@ -1,7 +1,7 @@
 import greenfoot.*;
 
 /**
- * Define un MinaEspacial en la Batalla Espacial
+ * Define una MinaEspacial en la Batalla Espacial
  */
 public class MinaExplosiva extends ActorBase {
     /**
@@ -24,17 +24,15 @@ public class MinaExplosiva extends ActorBase {
     }
 
     /**
-     * post: el MinaEspacial desaparece del mundo
+     * post: se genera una Explosion en la ubicacion de la MinaEspacial
+     * post: la MinaEspacial desaparece del mundo
      * 
      * @return la cantidad de combustible que la MinaEspacial resta
      */
     public int serRecogido() {
-        //Explosion explosion = new Explosion();
         Explosion.en(getWorld(), this.getX(), this.getY());
-        //explosion.en(getWorld(), super.getX(), super.getY());
         getWorld().removeObject(this);
 
-        
         Greenfoot.delay(20);
         return EXPLOSION_RESTA;
     }

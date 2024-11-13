@@ -1,8 +1,7 @@
 import greenfoot.*;
 
 /**
- * Un ParedIrrompible es un obstáculo que puede ser destruido por una
- * {@link NaveDeAtaque}. Esto llevará una cierta cantidad de ataques
+ * Una ParedIrrompible es un obstáculo que no puede ser destruido.
  */
 public class ParedIrrompible extends ActorBase {
     

@@ -1,9 +1,10 @@
 #BlueJ class context
 comment0.target=PuertaCerrada
-comment0.text=\r\n\ Una\ PuertaConLlave\ es...\r\n
+comment0.text=\r\n\ Una\ PuertaConLlave\ es\ un\ obstaculo\ que\ bloquea\ el\ camino\ de\ la\ Nave\ hasta\ que\ se\ abra\ con\ una\ llave\r\n
 comment1.params=
 comment1.target=void\ actualizarImagen()
 comment1.text=\r\n\ {@inheritDoc}\r\n
 comment2.params=
 comment2.target=void\ puertaAbierta()
+comment2.text=\r\n\ Abre\ la\ puerta\r\n\ post\:\ se\ elimina\ la\ puerta\r\n
 numComments=3

@@ -1,7 +1,7 @@
 import greenfoot.*;
 
 /**
- * Una PuertaConLlave es...
+ * Una PuertaConLlave es un obstaculo que bloquea el camino de la Nave hasta que se abra con una llave
  */
 public class PuertaCerrada extends ActorBase {
     
@@ -17,6 +17,10 @@ public class PuertaCerrada extends ActorBase {
         setImage(image);
     }
     
+    /**
+     * Abre la puerta
+     * post: se elimina la puerta
+     */
     public void puertaAbierta() {
         getWorld().removeObject(this);
     }
