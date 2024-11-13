@@ -114,7 +114,7 @@ public class NaveRecolectora extends NaveAliada {
 
         // si nadie lo recibe, lo pierdo en el vacío...
         consumirCombustible(cantidad);
-    }<<<<<<<HEAD
+    }
 
     /**
      * {@inheritDoc}
@@ -122,5 +122,5 @@ public class NaveRecolectora extends NaveAliada {
     @Override
     public void abrirPuerta(Direccion direccion) {
         super.abrirPuerta(direccion);
-    }=======>>>>>>>hector-front
+    }
 }
