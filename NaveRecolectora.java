@@ -77,6 +77,7 @@ public class NaveRecolectora extends NaveAliada {
             cantidad = objetivo.entregarMineral(cantidad);
             this.combustible = Math.min(this.combustible + cantidad, obtenerCombustibleMaximo());
         }
+        actualizarImagen();
     }
 
     /**
@@ -113,13 +114,13 @@ public class NaveRecolectora extends NaveAliada {
 
         // si nadie lo recibe, lo pierdo en el vacío...
         consumirCombustible(cantidad);
-    }
-    
+    }<<<<<<<HEAD
+
     /**
      * {@inheritDoc}
      */
     @Override
     public void abrirPuerta(Direccion direccion) {
         super.abrirPuerta(direccion);
-    }
+    }=======>>>>>>>hector-front
 }
