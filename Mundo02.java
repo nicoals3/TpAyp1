@@ -3,7 +3,7 @@ import greenfoot.Color;
 public class Mundo02 extends MundoBase {
 
     public Mundo02() {
-        super(10, 8, 80);
+        super(14, 9, 80);
     }
 
     @Override
@@ -45,5 +45,55 @@ public class Mundo02 extends MundoBase {
                 { f, f, f, f, f, f, f, f, f, f },
         };
         poblarAsteroidesConMatriz(asteroides);
+    }
+    
+    protected void generarParedes(){
+        agregar(new ParedIrrompible(), 2, 3);
+        agregar(new ParedIrrompible(), 2, 4);
+        agregar(new ParedIrrompible(), 2, 5);
+        agregar(new ParedIrrompible(), 3, 5);
+        agregar(new ParedIrrompible(), 4, 5);
+        agregar(new ParedIrrompible(), 4, 4);
+        agregar(new ParedIrrompible(), 4, 3);
+        agregar(new ParedIrrompible(), 3, 5);
+        agregar(new ParedIrrompible(), 4, 5);
+        agregar(new ParedIrrompible(), 4, 4);
+        agregar(new ParedIrrompible(), 4, 3);
+        
+        agregar(new ParedIrrompible(), 2, 3);
+        agregar(new ParedIrrompible(), 2, 4);
+        agregar(new ParedIrrompible(), 2, 5);
+        agregar(new ParedIrrompible(), 3, 5);
+        agregar(new ParedIrrompible(), 4, 5);
+        agregar(new ParedIrrompible(), 4, 4);
+        agregar(new ParedIrrompible(), 4, 3);
+        agregar(new ParedIrrompible(), 3, 5);
+        agregar(new ParedIrrompible(), 4, 5);
+        agregar(new ParedIrrompible(), 4, 4);
+        agregar(new ParedIrrompible(), 4, 3);
+        
+        agregar(new ParedIrrompible(), 2, 3);
+        agregar(new ParedIrrompible(), 2, 4);
+        agregar(new ParedIrrompible(), 2, 5);
+        agregar(new ParedIrrompible(), 3, 5);
+        agregar(new ParedIrrompible(), 4, 5);
+        agregar(new ParedIrrompible(), 4, 4);
+        agregar(new ParedIrrompible(), 4, 3);
+        agregar(new ParedIrrompible(), 3, 5);
+        agregar(new ParedIrrompible(), 4, 5);
+        agregar(new ParedIrrompible(), 4, 4);
+        agregar(new ParedIrrompible(), 4, 3);
+        
+        agregar(new ParedIrrompible(), 2, 3);
+        agregar(new ParedIrrompible(), 2, 4);
+        agregar(new ParedIrrompible(), 2, 5);
+        agregar(new ParedIrrompible(), 3, 5);
+        agregar(new ParedIrrompible(), 4, 5);
+        agregar(new ParedIrrompible(), 4, 4);
+        agregar(new ParedIrrompible(), 4, 3);
+        agregar(new ParedIrrompible(), 3, 5);
+        agregar(new ParedIrrompible(), 4, 5);
+        agregar(new ParedIrrompible(), 4, 4);
+        agregar(new ParedIrrompible(), 4, 3);
     }
 }
