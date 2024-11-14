@@ -14,8 +14,9 @@ public class Mundo02 extends MundoBase {
         // agrega la nave centinela en la posición 2, 6
         agregar(centinela, posicionEnX, posicionEnY);
 
+        agregar(new PilotoDeEjemplo(), 0, 8);
+        
         agregar(new NaveDeAtaqueEnemiga(Direccion.OESTE), 5, 4);
-
         agregar(new NaveDeAtaqueEnemiga(Direccion.OESTE), 9, 5);
         agregar(new NaveDeAtaqueEnemiga(Direccion.OESTE), 9, 6);
         agregar(new NaveDeAtaqueEnemiga(Direccion.OESTE), 9, 7);
@@ -34,11 +35,12 @@ public class Mundo02 extends MundoBase {
         Item primerItem = new Item();
         Item segundoItem = new Item();
         Item tercerItem = new Item();
-        
+        Item cuartoItem = new Item();
 
         agregar(primerItem, 2, 4);
         agregar(segundoItem, 8, 7);
         agregar(tercerItem, 8, 2);
+        agregar(cuartoItem, 10, 7);
     }
 
     @Override
