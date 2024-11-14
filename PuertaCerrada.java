@@ -5,7 +5,6 @@ import greenfoot.*;
  */
 public class PuertaCerrada extends ActorBase {
     
-    protected boolean abierta = false;
     /**
      * {@inheritDoc}
      */
