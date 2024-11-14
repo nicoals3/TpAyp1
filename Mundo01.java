@@ -38,6 +38,11 @@ public class Mundo01 extends MundoBase {
         agregar(segundoItem, 2, 2);
     }
 
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> main
 
     protected void generarAsteroideDeMineral(){
         agregar(new AsteroideDeMineral(10), 8,2);

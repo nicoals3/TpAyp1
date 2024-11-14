@@ -23,7 +23,7 @@ public class Llave extends ActorBase {
     /**
      * post: la Llave desaparece del mundo
      * 
-     * @return la Llave fue recogida
+     * @return si la Llave fue recogida
      */
     public boolean serRecogido() {
         getWorld().removeObject(this);

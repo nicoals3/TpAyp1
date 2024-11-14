@@ -56,15 +56,22 @@ public class Mundo02 extends MundoBase {
             };
         poblarAsteroidesConMatriz(asteroides);
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> main
 
     protected void generarParedes(){
         //Columnas Izquierda 
         agregar(new ParedIrrompible(), 1, 1);
         agregar(new ParedIrrompible(), 1, 2);
         agregar(new ParedIrrompible(), 1, 3);
+<<<<<<< HEAD
         agregar(new ParedIrrompible(), 1, 4);
+=======
+>>>>>>> main
         agregar(new ParedIrrompible(), 1, 5);
         agregar(new ParedIrrompible(), 1, 6);
         agregar(new ParedIrrompible(), 1, 7);
@@ -77,7 +84,10 @@ public class Mundo02 extends MundoBase {
         agregar(new ParedIrrompible(), 5, 1);
         agregar(new ParedIrrompible(), 6, 1);
         agregar(new ParedIrrompible(), 7, 1);
+<<<<<<< HEAD
         agregar(new ParedIrrompible(), 8, 1);
+=======
+>>>>>>> main
         agregar(new ParedIrrompible(), 9, 1);
         agregar(new ParedIrrompible(), 10, 1);
         agregar(new ParedIrrompible(), 11, 1);
@@ -97,15 +107,23 @@ public class Mundo02 extends MundoBase {
         agregar(new ParedIrrompible(), 11, 8);
         agregar(new ParedIrrompible(), 10, 8);
         agregar(new ParedIrrompible(), 9, 8);
+<<<<<<< HEAD
         agregar(new ParedIrrompible(), 8, 8);
         agregar(new ParedIrrompible(), 7, 8);
 
+=======
+        agregar(new ParedIrrompible(), 7, 8);
+>>>>>>> main
         agregar(new ParedIrrompible(), 5, 8);
         agregar(new ParedIrrompible(), 4, 8);
         agregar(new ParedIrrompible(), 3, 8);
         agregar(new ParedIrrompible(), 2, 8);
 
         //Medio
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
         agregar(new ParedIrrompible(), 8, 4);
 
         agregar(new ParedIrrompible(), 7, 2);
@@ -140,6 +158,16 @@ public class Mundo02 extends MundoBase {
         //Portal transporta a las cordenadas del tablero en E5
         agregar(new Portal(4,4), 10, 6);
     }
+<<<<<<< HEAD
+=======
+    
+     protected void generarAsteroideDeMineral(){
+        agregar(new AsteroideDeMineral(10), 1,4);
+        agregar(new AsteroideDeMineral(10), 8,1);
+        agregar(new AsteroideDeMineral(100), 8,8);
+
+    }
+>>>>>>> main
 
     protected void generarMinasExplosivas(){
         agregar(new MinaExplosiva(), 9, 2);

@@ -10,7 +10,9 @@ public abstract class NaveAliada extends NaveBase {
      * El combustible de la NaveAliada. Toda acción insume combustible
      */
     protected int combustible;
-        //                                          agregar documentacion
+    /**
+     * Indica si la nave tiene la llave o no
+     */
     protected boolean llave = false;
     
     /**
@@ -131,10 +133,11 @@ public abstract class NaveAliada extends NaveBase {
      * pre: la NaveAliada debe tener {@link #combustible} suficiente, y la celda
      * destino debe estar disponible <br>
      * post: la NaveAliada consumirá tanto {@link #combustible} como lo defina
-     * {@link #obtenerConsumoPorMovimiento()}, recogerá cualquier {@link Item} que
-     * se encuentre en el camino, y se desplazará un casillero en la dirección
-     * solicitada.
-     *                                                                                                  agregar portal, mina y llave a documentacion
+     * {@link #obtenerConsumoPorMovimiento()}, recogerá cualquier {@link Item} o {@link Llave} que
+     * se encuentre en el camino, para luego desplazarce a un casillero en la dirección
+     * solicitada, si hay una {@link MinaExplosiva} en la posicion alcanzada recibe el daño que 
+     * esta contiene y si pisa un {@link Portal} se desplaza a la posicion indicada por este.
+     *
      * @param direccion es la dirección hacia la que se desea mover
      * @return si se ha movido acorde a lo solicitado
      */
@@ -201,7 +204,13 @@ public abstract class NaveAliada extends NaveBase {
         return super.hayActorHacia(NaveBase.class, direccion);
     }
     
-    //                                          agregar documentacion
+    /**
+     * Define una forma de inspeccionar el entorno
+     * 
+     * @param direccion es la dirección que desea inspeccionar
+     * @return si hay una {@link PuertaCerrada} a una casilla de distancia, en la
+     *         dirección deseada
+     */
     public boolean hayPuertaHacia(Direccion direccion){
         return super.hayActorHacia(PuertaCerrada.class, direccion);
     }
@@ -240,8 +249,14 @@ public abstract class NaveAliada extends NaveBase {
     public boolean estaEnElBorde() {
         return isAtEdge();
     }
-    
-            //                                          agregar documentacion
+
+      /**
+     * Verifica si la nave tiene la llave y si hay una puerta en la direccion indicada para luego abrirla <br>
+     * pre: la NaveAliada debe tener {@link #llave} en {@code true}, y la celda
+     * destino debe contener {@link PuertaCerrada} <br>
+     * post: la {@link PuertaCerrada} desaparece
+     * @param direccion es la dirección en donde se encuentra la puerta a abrir
+     */
     public void abrirPuerta(Direccion direccion){
         if(llave && hayPuertaHacia(direccion) && puedeActuar()){
             this.direccion = direccion;
