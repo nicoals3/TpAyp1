@@ -33,9 +33,12 @@ public class Mundo02 extends MundoBase {
     protected void generarItems() {
         Item primerItem = new Item();
         Item segundoItem = new Item();
+        Item tercerItem = new Item();
+        
 
-        agregar(primerItem, 2, 1);
-        agregar(segundoItem, 7, 6);
+        agregar(primerItem, 2, 4);
+        agregar(segundoItem, 8, 7);
+        agregar(tercerItem, 8, 2);
     }
 
     @Override
@@ -53,13 +56,15 @@ public class Mundo02 extends MundoBase {
             };
         poblarAsteroidesConMatriz(asteroides);
     }
-
+    
+    
 
     protected void generarParedes(){
         //Columnas Izquierda 
         agregar(new ParedIrrompible(), 1, 1);
         agregar(new ParedIrrompible(), 1, 2);
         agregar(new ParedIrrompible(), 1, 3);
+        agregar(new ParedIrrompible(), 1, 4);
         agregar(new ParedIrrompible(), 1, 5);
         agregar(new ParedIrrompible(), 1, 6);
         agregar(new ParedIrrompible(), 1, 7);
@@ -72,6 +77,7 @@ public class Mundo02 extends MundoBase {
         agregar(new ParedIrrompible(), 5, 1);
         agregar(new ParedIrrompible(), 6, 1);
         agregar(new ParedIrrompible(), 7, 1);
+        agregar(new ParedIrrompible(), 8, 1);
         agregar(new ParedIrrompible(), 9, 1);
         agregar(new ParedIrrompible(), 10, 1);
         agregar(new ParedIrrompible(), 11, 1);
@@ -91,14 +97,15 @@ public class Mundo02 extends MundoBase {
         agregar(new ParedIrrompible(), 11, 8);
         agregar(new ParedIrrompible(), 10, 8);
         agregar(new ParedIrrompible(), 9, 8);
+        agregar(new ParedIrrompible(), 8, 8);
         agregar(new ParedIrrompible(), 7, 8);
+
         agregar(new ParedIrrompible(), 5, 8);
         agregar(new ParedIrrompible(), 4, 8);
         agregar(new ParedIrrompible(), 3, 8);
         agregar(new ParedIrrompible(), 2, 8);
 
         //Medio
-
         agregar(new ParedIrrompible(), 8, 4);
 
         agregar(new ParedIrrompible(), 7, 2);
@@ -132,13 +139,6 @@ public class Mundo02 extends MundoBase {
 
         //Portal transporta a las cordenadas del tablero en E5
         agregar(new Portal(4,4), 10, 6);
-    }
-    
-     protected void generarAsteroideDeMineral(){
-        agregar(new AsteroideDeMineral(10), 1,4);
-        agregar(new AsteroideDeMineral(10), 8,1);
-        agregar(new AsteroideDeMineral(100), 8,8);
-
     }
 
     protected void generarMinasExplosivas(){
