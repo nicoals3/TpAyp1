@@ -136,12 +136,6 @@ public class Mundo02 extends MundoBase {
         agregar(new Portal(4,4), 10, 6);
     }
     
-     protected void generarAsteroideDeMineral(){
-        agregar(new AsteroideDeMineral(10), 1,4);
-        agregar(new AsteroideDeMineral(10), 8,1);
-        agregar(new AsteroideDeMineral(100), 8,8);
-
-    }
 
     protected void generarMinasExplosivas(){
         agregar(new MinaExplosiva(), 9, 2);

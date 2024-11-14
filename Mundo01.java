@@ -14,7 +14,7 @@ public class Mundo01 extends MundoBase {
         // agrega la nave centinela en la posición 2, 6
         agregar(centinela, posicionEnX, posicionEnY);
         
-        NaveDeAtaque nave = new NaveDeAtaque();
+        NaveDeAtaque nave = new NaveDeAtaque( Direccion.NORTE, 20);
         int posicionX = 5;
         int posicionY = 5;
         // agrega la nave en la posición 5, 5
@@ -26,7 +26,7 @@ public class Mundo01 extends MundoBase {
     protected void generarPOIs() {
         super.generarPOIs();
         marcarCelda(2, 8, new Color(200, 0, 0, 150));
-        marcarCelda(9, 2, new Color(0, 200, 0, 150));
+        marcarCelda(6, 5, new Color(0, 200, 0, 150));
     }
 
     @Override
