@@ -46,7 +46,7 @@ public class PilotoDeEjemplo extends PilotoBase {
         avanzarAlNortePor(3);
     }
     
-    void misionMundo00(NaveDeAtaque nave){
+    public void misionMundo00(NaveDeAtaque nave){
         super.subirse(nave);
         despegar();
         avanzarHaciaPor(Direccion.NORTE, 1);
@@ -61,11 +61,11 @@ public class PilotoDeEjemplo extends PilotoBase {
         bajarse();
     }
     
-    void misionMundo01(){
+    public void misionMundo01(){
         
     }
     
-    void misionMundo02(NaveDeAtaque nave){
+    public void misionMundo02(NaveDeAtaque nave){
         super.subirse(nave);
         despegar();
         avanzarHaciaPor(Direccion.NORTE, 1);
